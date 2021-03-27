@@ -9,7 +9,7 @@ const savedTheme = localStorage.getItem('theme');
 
 refs.themeSwitcher.addEventListener('click', handleChangeTheme);
 
-function setTheme() {
+export function setTheme() {
 return savedTheme ? initiateSavedTheme() : initiateDefaultTheme();
 }
 
@@ -36,4 +36,4 @@ function initiateSavedTheme() {
     { refs.themeSwitcher.checked = true; }
 }
 
-export default setTheme;
+// export default setTheme;
