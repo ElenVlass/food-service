@@ -9,4 +9,3 @@ const menuMarkup = templateCardList(initialMenu);
 refs.dishes.insertAdjacentHTML('beforeend', menuMarkup);
 
 setTheme();
-
