@@ -9,3 +9,15 @@ const menuMarkup = templateCardList(initialMenu);
 refs.dishes.insertAdjacentHTML('beforeend', menuMarkup);
 
 setTheme();
+
+refs.burger.addEventListener('click', handleBurgerBtnClick);
+refs.closeButton.addEventListener('click', handleCloseBtnClick)
+
+function handleBurgerBtnClick() {
+    refs.sideBar.classList.add('active');
+};
+
+function handleCloseBtnClick() {
+ refs.sideBar.classList.remove('active');
+};
+
